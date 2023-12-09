@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <%- include("nav") %>
+    <section class="signupForm">
+        <form action="/user/signup" method="post" id="form">
+            <input type="text" name="username" id="username" placeholder="Enter UserName">
+            <input type="password" name="password" id="password" placeholder="Enter Password">
+            <input type="email" name="email" id="email" placeholder="Enter EmailID">
+            <input type="submit" value="SignUp" id="signup">
+        </form>
+    </section>
+</body>
+</html>

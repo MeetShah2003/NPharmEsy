@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+header{
+    font-size: 24px;
+    background-color: black;
+    padding: 18px;
+    margin-bottom: 10px;
+}
+
+header .navigation a{
+    padding: 0px 15px;
+    color: cadetblue;
+    transition: all ease-in 0.5s;
+}
+
+header .navigation a:hover{
+    color: yellow;
+}
+.signupForm,.loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.signupForm #form{
+    width: 350px;
+    height: 260px;
+    border: 2px solid rgb(30, 29, 29);
+    padding: 15px;
+    border-radius: 15px;
+}
+.loginForm #form{
+    width: 350px;
+    height: 320px;
+    border: 2px solid rgb(30, 29, 29);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.signupForm #form input,.loginForm #form input{
+    display: block;
+    width: 100%;
+    margin: 15px 0px;
+    padding: 7px;
+}
+
+.signupForm #form #signup,.loginForm #form #login{
+    background-color: pink;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 15px 30px;
+    transition: all ease-in-out 0.5s;
+}
+
+.signupForm #form #signup:hover,.loginForm #form #login:hover{
+    background-color: black;
+    color: gold;
+}
+.loginForm #form a{
+    border: 2px solid black;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+.loginForm #form #logo{
+    width: 50px;
+}
+
+/* .signupForm #form in */
