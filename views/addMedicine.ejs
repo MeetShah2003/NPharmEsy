@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add medicines</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <%- include("nav") %>
+    <section class="medicines">
+        <form action="/medicine/add" method="post" id="form">
+            <input type="url" name="img" id="img" placeholder="Enter URL">
+            <input type="text" id="medicine" name="medicine" placeholder="Enter Medicine Name">
+            <input type="text" name="title" id="title" placeholder="Enter Title">
+            <input type="text" name="unit" id="unit" placeholder="Enter Unit">
+            <input type="number" name="price" id="price" placeholder="Enter Price">
+            <input type="text" name="description" id="description" placeholder="Enter Description">
+            <input type="submit" name="addMedicine" id="addMedicine" value="addMedicine">
+        </form>
+    </section>
+</body>
+</html>

@@ -22,9 +22,9 @@ const signUp = async (req, res) => {
           password: hash,
           email,
         });
-        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
+        const token = jwt.sign({ id: user._id, email: user.email },process.env.JWT_SECRET);
         console.log(token);
-        return res.status(200).redirect("/user/login");
+        return res.status(200).cookie("token", token).redirect("/user/login");
       }
     });
   }
@@ -43,9 +43,11 @@ const login = async (req, res) => {
         console.log(err.message);
       }
       if (result) {
-        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
+        const token = jwt.sign({ id: user._id, email: user.email },process.env.JWT_SECRET);
         console.log(token);
-        return res.status(200).redirect("/medicine/home");
+        return res.status(200)
+          .cookie("token", token)
+          .redirect("/medicine");
       } else {
         return res.status(400).send({ message: "invalid password" });
       }

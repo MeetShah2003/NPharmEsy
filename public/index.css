@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
 ul,li{
@@ -61,7 +62,7 @@ header .navigation a:hover{
 }
 .loginForm #form{
     width: 350px;
-    height: 320px;
+    height: 350px;
     border: 2px solid rgb(30, 29, 29);
     padding: 15px;
     border-radius: 15px;
@@ -87,14 +88,60 @@ header .navigation a:hover{
     background-color: black;
     color: gold;
 }
-.loginForm #form a{
+.loginForm #form #auth{
     border: 2px solid black;
-    padding: 15px 30px;
+    padding: 10px 30px;
+    margin: 7px 0px;
+    transition: all ease-in 0.5s;
     width: 100%;
+    text-align: center;
+}
+.loginForm #form #auth:hover{    
+  box-shadow: rgb(35, 34, 44, 0.5) 0px 0px 8px;
 }
 
 .loginForm #form #logo{
     width: 50px;
 }
+.loginForm #form #logo2{
+    width: 30px;
+}
 
-/* .signupForm #form in */
+/* add medicine css */
+
+.medicines{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    margin-top: 35px;
+}
+
+.medicines #form{
+    border: 2px solid black;
+    padding: 80px;
+    border-radius: 15px;
+}
+
+.medicines #form input{
+    display: block;
+    padding: 15px 35px;
+    margin: 10px 0px;
+    background-color: none;
+}
+
+.medicines #form #addMedicine{
+    border: none;
+    background-color: pink;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 18px;
+    transition: all ease-in-out 0.5s;
+}
+
+.medicines #form #addMedicine:hover{
+    background-color: black;
+    color: gold;
+}
